@@ -10,10 +10,6 @@ esac
 
 set -o vi
 
-
-### ENV VARS ###
-export REPOS=$HOME/dev/repos
-
 ### HISTORY ####
 
 # append to the history file, don't overwrite it
@@ -155,7 +151,7 @@ kctx() {
 # some more aliases
 alias kc='kubectx'
 alias kn='kubens'
-alias kgpa='kubectl get pods'
+alias kgp='kubectl get pods'
 alias kgpa='kubectl get pods -A'
 alias k='kubectl'
 alias ll='ls -alF'
