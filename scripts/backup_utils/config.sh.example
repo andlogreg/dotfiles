@@ -1,0 +1,32 @@
+# -----------------------------------------------------------------------------
+# EXAMPLE CONFIGURATION FILE
+# Copy to 'config.sh' and fill in their actual paths.
+# -----------------------------------------------------------------------------
+
+# 1. DVC tracked files directory
+export DVC_REPO_PATH=""
+
+# 2. DVC Backend (where the large files are actually stored)
+export DVC_BACKEND_PATH=""
+
+# 3. Local Restic Repository (where all local backups are stored)
+export LOCAL_RESTIC_REPO=""
+
+# 4. Obsidian Vault (the source directory)
+export OBSIDIAN_VAULT_PATH=""
+
+# 5. Obsidian/Vault Git Backend
+export OBSIDIAN_BACKEND_PATH=""
+
+# 6. Photos large file backend (The source directory)
+export PHOTOS_BACKEND_PATH=""
+
+# 7. External Drive Name (Used for the 'mount | grep -q' check)
+# This should match the volume name as it appears under /Volumes/.
+export EXTERNAL_DRIVE_NAME=""
+
+# 8. External Restic Repository Path (The full path to the repo on the external drive)
+export EXTERNAL_RESTIC_REPO=""
+
+# 9. Cloud Restic Repository (using rclone syntax: <rclone_remote_name>:<path>)
+export CLOUD_RESTIC_REPO=""
