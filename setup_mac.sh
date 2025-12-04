@@ -30,6 +30,8 @@ ln -sf "$PWD/k9s" "$XDG_CONFIG_HOME"/k9s
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
 ln -sf "$PWD/.bashrc" "$HOME"/.bashrc
 ln -sf "$PWD/.bash_profile" "$HOME"/.bash_profile
+ln -sf "$PWD/.zprofile" "$HOME"/.zprofile
+ln -sf "$PWD/.zshrc" "$HOME"/.zshrc
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 ln -sf "$PWD/lazygit" "$XDG_CONFIG_HOME"/lazygit
-
+ln -sf "$PWD/scripts" "$XDG_CONFIG_HOME"/scripts

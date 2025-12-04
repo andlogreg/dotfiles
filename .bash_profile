@@ -12,11 +12,11 @@ fi
 # 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # fi
 
+export XDG_CONFIG_HOME="$HOME"/.config
+
 if [ -r ~/.bashrc ]; then
 	source ~/.bashrc
 fi
-
-export XDG_CONFIG_HOME="$HOME"/.config
 
 # # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
