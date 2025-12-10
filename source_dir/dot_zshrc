@@ -14,3 +14,6 @@ alias backupmyfiles="$XDG_CONFIG_HOME/scripts/backup_utils/sync_and_backup.sh"
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
+
+# mise
+eval "$(mise activate zsh)"

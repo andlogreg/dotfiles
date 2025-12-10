@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+if ! command -v mise >/dev/null; then
+    curl https://mise.run | sh
+fi
+
 if ! command -v chezmoi >/dev/null; then
     sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply andlogreg
 fi
