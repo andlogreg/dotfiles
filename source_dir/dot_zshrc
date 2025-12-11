@@ -16,4 +16,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # mise
-eval "$($HOME/.local/binmise activate zsh)"
+eval "$($HOME/.local/bin/mise activate zsh)"
