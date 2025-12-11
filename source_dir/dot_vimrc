@@ -1,0 +1,17 @@
+" Enable syntax highlight
+syntax on
+
+" Highlight trailing whitespaces
+autocmd BufRead,BufNewFile * match Error /\s\+$/
+
+" Indentation
+filetype indent on
+
+" Use 2 spaces indentation
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+" Set backspace to follow indentations as well
+set backspace=indent,eol,start
