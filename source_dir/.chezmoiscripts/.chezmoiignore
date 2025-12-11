@@ -1,0 +1,3 @@
+{{- if eq .chezmoi.os "darwin" }}
+./run_onchange_after_install_vim.sh
+{{- end }}

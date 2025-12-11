@@ -5,7 +5,3 @@ set -euo pipefail
 if ! command -v chezmoi >/dev/null; then
     sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply andlogreg
 fi
-
-echo "Installing Vim..."
-sudo apt update && sudo apt install vim -y
-echo "Vim done!"
