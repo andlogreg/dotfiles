@@ -1,3 +1,4 @@
 {{- if ne .chezmoi.os "darwin" }}
 ./aerospace
+./iterm2
 {{- end }}
