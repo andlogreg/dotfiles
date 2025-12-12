@@ -24,3 +24,6 @@ source <(kubectl completion zsh)
 
 # mise
 eval "$($HOME/.local/bin/mise activate zsh)"
+
+#prompt
+eval "$(starship init zsh)"
