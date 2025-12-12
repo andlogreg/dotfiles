@@ -1,0 +1,4 @@
+ On macos, add reference or automate  nerd font install
+`brew install font-ubuntu-mono-nerd-font`
+
+
