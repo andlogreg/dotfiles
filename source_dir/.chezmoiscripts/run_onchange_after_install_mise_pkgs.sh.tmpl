@@ -2,5 +2,10 @@
 
 set -euo pipefail
 
+{{- if ne .chezmoi.os "darwin" }}
+# needed for tmux installation
+sudo apt update && sudo apt install libncurses-dev yacc -y
+{{- end }}
+
 # config.tom hash: {{ include "dot_config/mise/config.toml" | sha256sum }}
 $HOME/.local/bin/mise install
