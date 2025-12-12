@@ -1,5 +1,8 @@
 [tools]
 chezmoi = "latest"
-k3d = "latest"
+kubectl = "latest"
 k9s = "latest"
 tmux = "latest"
+{{- if eq .chezmoi.os "darwin" }}
+k3d = "latest"
+{{- end }}
