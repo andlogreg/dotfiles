@@ -7,5 +7,5 @@ set -euo pipefail
 sudo apt update && sudo apt install libncurses-dev yacc -y
 {{- end }}
 
-# config.tom hash: {{ include "dot_config/mise/config.toml" | sha256sum }}
+# config.tom hash: {{ include "dot_config/mise/config.toml.tmpl" | sha256sum }}
 $HOME/.local/bin/mise install
