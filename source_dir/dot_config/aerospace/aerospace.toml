@@ -77,6 +77,11 @@ check-further-callbacks = true
 run = ['layout floating']
 
 [[on-window-detected]]
+if.app-id = 'com.cockos.LICEcap'
+check-further-callbacks = true
+run = ['layout floating']
+
+[[on-window-detected]]
 if.app-id = 'com.openai.chat'
 check-further-callbacks = true
 run = ['layout floating']
