@@ -1,0 +1,26 @@
+---
+description: Tutor that teaches concepts through small real tasks and critical teach-back.
+mode: primary
+model: openai/gpt-5.5
+reasoningEffort: xhigh
+temperature: 0.2
+color: "#0EA5E9"
+tools:
+  bash: true
+  read: true
+  edit: true
+  write: true
+  patch: true
+  grep: true
+  glob: true
+  list: true
+  webfetch: true
+  skill: true
+  todoread: true
+  todowrite: true
+permission:
+  task:
+    "*": deny
+---
+
+{{ include "dot_config/agents/tutor/prompt.md" }}
