@@ -191,6 +191,11 @@ fi
 # [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
 # mise
+# shims on PATH so mise-managed tools resolve in non-interactive shells
+# (one-shot `bash -c`, git hooks / pre-commit) — `activate` alone only refreshes
+# PATH on an interactive prompt / cd, so bare `python3`, `pre-commit`, etc. otherwise
+# fail there and need `mise exec --`.
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 eval "$($HOME/.local/bin/mise activate bash)"
 
 # Kubectl autocompletion
