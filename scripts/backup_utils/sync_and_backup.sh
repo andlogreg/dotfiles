@@ -22,7 +22,6 @@ fi
     echo "Items included in this run:"
     echo " - DVC files (add/commit)"
     echo " - DVC/Git backend directories"
-    echo " - Obsidian Vault and Git backend"
     echo " - Photos backend directory"
     echo " "
 
@@ -53,15 +52,15 @@ fi
     read -s -p "🔐 Enter >local< repo password: " RESTIC_LOCAL_PASSWORD_INPUT
     export RESTIC_PASSWORD="$RESTIC_LOCAL_PASSWORD_INPUT"
 
-    # Build the backup command array with all source paths
+    # Build the backup command array with all source paths.
+    # The Obsidian vault is deliberately absent: it is a git repository with its
+    # own remote, and that remote is what protects it.
     BACKUP_CMD=(restic backup
         --exclude="*.DS_Store"
         --exclude-file="$PHOTOS_BACKEND_PATH/restic_excludes.txt"
         --verbose
         "$DVC_REPO_PATH"
         "$DVC_BACKEND_PATH"
-        "$OBSIDIAN_VAULT_PATH"
-        "$OBSIDIAN_BACKEND_PATH"
         "$PHOTOS_BACKEND_PATH"
     )
 
